@@ -1,18 +1,18 @@
-import logo from "./assets/logo.svg";
-import "./App.css";
+import logo from "../assets/icons/logo.svg";
+import "../styles/Home.css";
 
-function App() {
+function Home() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className="Home">
+      <header className="Home-header">
+        <img src={logo} className="Home-logo" alt="logo" />
         <p>Hola, Soy Juan Raul Martinez Lopez</p>
         <p>Frontend Developer Jr</p>
         <p>Este es mi portafolio, está en construcción...</p>
         <p>
           Mientras esperas puedes{" "}
           <a
-            className="App-link"
+            className="Home-link"
             href="https://drive.google.com/file/d/1aUAhm6cE_MA-oOYQlZBEs5Bhr9gc3CnB/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
@@ -25,4 +25,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
