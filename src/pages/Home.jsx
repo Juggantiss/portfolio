@@ -1,27 +1,41 @@
 import logo from "../assets/icons/logo.svg";
+import { IoIosArrowDown } from "react-icons/io";
 import "../styles/Home.css";
 
 function Home() {
   return (
-    <div className="Home">
-      <header className="Home-header">
-        <img src={logo} className="Home-logo" alt="logo" />
-        <p>Hola, Soy Juan Raul Martinez Lopez</p>
-        <p>Frontend Developer Jr</p>
-        <p>Este es mi portafolio, está en construcción...</p>
-        <p>
-          Mientras esperas puedes{" "}
-          <a
-            className="Home-link"
-            href="https://drive.google.com/file/d/1aUAhm6cE_MA-oOYQlZBEs5Bhr9gc3CnB/view?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            descargar mi CV.
+    <main className="Home">
+      <section id="page-1" className="principal-container">
+        <figure className="img-container">
+          <img src={logo} className="logo" alt="logo" />
+        </figure>
+        <section className="text-container">
+          <p className="title">Hola, Soy Juan Raúl Martínez López.</p>
+          <p className="subtitle">Desarrollador React y React Native Jr.</p>
+        </section>
+        <section className="text-footer">
+          <p>Aprende más sobre mí y lo que hago</p>
+          <a href="#page-2" className="link">
+            <IoIosArrowDown size={30} />
           </a>
-        </p>
-      </header>
-    </div>
+        </section>
+      </section>
+
+      <section id="page-2" className="second-container">
+        <p>Jugaaaaa</p>
+      </section>
+      {/* <p>
+        Mientras esperas puedes{" "}
+        <a
+          className="Home-link"
+          href="https://drive.google.com/file/d/1aUAhm6cE_MA-oOYQlZBEs5Bhr9gc3CnB/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          descargar mi CV.
+        </a>
+      </p> */}
+    </main>
   );
 }
 
